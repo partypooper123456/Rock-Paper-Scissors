@@ -1,0 +1,92 @@
+*{
+    font-family: poppins;
+}
+
+.maincontainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 550px;
+    background-color: rgb(134, 131, 199);
+    border-radius: 20px;
+}
+
+.maincontainer h1 {
+    text-align: center;
+    font: poppins;
+}
+
+#game-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+#player-result, #computer-result {
+    width: 200px;
+    height: 200px;
+    border: 8px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+#player-area h2, #computer-area h2 {
+    text-align: center;
+}
+
+#countdown-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-area {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.choice-button {
+    position: relative;
+    bottom: 25px;
+    background: transparent;
+    border: none;
+    margin: 0 15 15 15px;
+    cursor: pointer;
+}
+
+.choice-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.crown-icon {
+    width: 70px; 
+    position: absolute;
+    top: 155px; 
+}
+
+#player-choice-icon{
+    width: 200px;
+}
+
+#computer-choice-icon{
+    width: 200px;
+}
+
+#choices-text {
+    font-size: 80%; 
+}
+
+@keyframes bounce {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
